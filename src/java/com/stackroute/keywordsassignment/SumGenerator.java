@@ -15,13 +15,23 @@ public class SumGenerator {
         int num2=sc.nextInt();
         ObjectAndClasses objectAndClasses=new ObjectAndClasses();//we use new keyword to create an object
        int result= objectAndClasses.sumCalculator(num1,num2);
-       //conditional statements
-        if(result>10)   //if result is greater than 10 run this
-        System.out.println("great");
-        else if(result>5 && result<10)//if result is greater than 5 and less than 10 run this
-            System.out.println("not bad");
-        else        //else
-            System.out.println("bad");
+        int sum=0;
+        int i=0;
+       for(;;){//for loop runs until i==result
+        if(i==result+1)
+            break;
+        sum=sum+i;
+        i++;
+        }
+        System.out.println(sum);
+       int sum1=sum;
+        sum=0;
+       do{
+          if(sum%2==0)
+           System.out.println(sum+"is even");
+           sum++;
+       }while (sum1!=sum);//while loop for interating; if while is false program ends
+
 
     }
 }
