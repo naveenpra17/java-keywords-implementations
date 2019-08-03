@@ -1,1 +1,1 @@
-this program contains examples for objects and classes
+this program contains examples if statement
